@@ -6,14 +6,15 @@
 BOOL
 	TestGetModuleName()
 {
-	BOOL	bRet	= FALSE;
+	BOOL	bRet				= FALSE;
 
-	HMODULE hModule = NULL;
+	HMODULE hModule				= NULL;
+	TCHAR	tchPath[MAX_PATH]	= {0};
 
 
 	__try
 	{
-		GetModuleName(NULL);
+		GetModulePath(NULL, tchPath, _countof(tchPath));
 
 		hModule = LoadLibrary(L"DynamicLibrary1.dll");
 		if (!hModule)
@@ -87,13 +88,13 @@ int _tmain(int argc, _TCHAR* argv[])
 {
 	printf("[%s] 0x%08p \n", __FUNCTION__, _tmain);
 
-	// TestGetModuleName();
+	TestGetModuleName();
 
-	Init();
-
-	TestStackBachtrace();
-
-	Unload();
+// 	Init();
+// 
+// 	TestStackBachtrace();
+// 
+// 	Unload();
 
 	_getch();
 

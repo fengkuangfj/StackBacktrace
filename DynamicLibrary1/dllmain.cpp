@@ -6,7 +6,8 @@ BOOL APIENTRY DllMain( HMODULE hModule,
                        LPVOID lpReserved
 					 )
 {
-	HMODULE hModuleTemp = NULL;
+	HMODULE hModuleTemp			= NULL;
+	TCHAR	tchPath[MAX_PATH]	= {0};
 
 
 	switch (ul_reason_for_call)
@@ -15,8 +16,8 @@ BOOL APIENTRY DllMain( HMODULE hModule,
 		{
 			printf("[%s] hModule %p \n", __FUNCTION__, hModule);
 
-			GetModuleName(hModule);
-			GetModuleName(NULL);
+			GetModulePath(hModule, tchPath, _countof(tchPath));
+			GetModulePath(NULL, tchPath, _countof(tchPath));
 
 			__try
 			{

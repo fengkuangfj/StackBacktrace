@@ -149,7 +149,7 @@ BOOL
 	{
 		g_hProcess = GetCurrentProcess();
 
-		if (!SymInitialize(g_hProcess, "G:\\GitHub\\StackBacktrace\\Application\\Debug", TRUE))
+		if (!SymInitialize(g_hProcess, "G:\\GitHub\\StackBacktrace\\Application\\Debug", FALSE))
 		{
 			printf("SymInitialize failed. (%d) \n", GetLastError());
 			__leave;

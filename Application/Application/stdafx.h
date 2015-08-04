@@ -14,5 +14,5 @@
 #include <Windows.h>
 #include <conio.h>
 
-#include "..//..//GetModuleName.h"
+#include "..//..//GetModulePath.h"
 #include "..//..//StackBacktrace.h"

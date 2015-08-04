@@ -24,10 +24,10 @@
     <ClInclude Include="targetver.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\GetModuleName.h">
+    <ClInclude Include="..\..\StackBacktrace.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\StackBacktrace.h">
+    <ClInclude Include="..\..\GetModulePath.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
@@ -38,10 +38,10 @@
     <ClCompile Include="Application.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\GetModuleName.cpp">
+    <ClCompile Include="..\..\StackBacktrace.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\StackBacktrace.cpp">
+    <ClCompile Include="..\..\GetModulePath.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

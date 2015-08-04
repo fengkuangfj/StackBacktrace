@@ -16,5 +16,5 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#include "..//GetModuleName.h"
+#include "..//GetModulePath.h"
 #include "..//StackBacktrace.h"
