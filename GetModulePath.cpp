@@ -12,7 +12,7 @@ BOOL
 	DWORD	dwResult	= 0;
 
 
-	// printf("[%s] begin \n", __FUNCTION__, __LINE__, __COUNTER__, __DATE__, __FUNCDNAME__, __STDC__);
+	printf("[%s] begin \n", __FUNCTION__);
 
 	__try
 	{

@@ -49,14 +49,20 @@ BOOL
 	_Out_ LPDWORD lpNumberOfBytesRead
 	);
 
-BOOL
-	WalkFrameChaim();
 
-BOOL
-	StackBacktrace();
+class CStackBacktrace
+{
+public:
+	BOOL
+		Init();
 
-BOOL
-	Init();
+	BOOL
+		Unload();
 
-BOOL
-	Unload();
+	BOOL
+		StackBacktrace();
+
+private:
+	BOOL
+		WalkFrameChaim();
+};

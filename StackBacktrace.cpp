@@ -4,7 +4,7 @@ RTLWALKFRAMECHAIN	RtlWalkFrameChain	= NULL;
 HANDLE				g_hProcess			= NULL;
 
 BOOL
-	WalkFrameChaim()
+	CStackBacktrace::WalkFrameChaim()
 {
 	BOOL			bRet						= FALSE;
 
@@ -22,7 +22,7 @@ BOOL
 
 
 	printf("[%s] begin \n", __FUNCTION__);
-	printf("[%s] 0x%08p \n", __FUNCTION__, WalkFrameChaim);
+	printf("[%s] 0x%08p \n", __FUNCTION__, &CStackBacktrace::WalkFrameChaim);
 
 	__try
 	{
@@ -140,7 +140,7 @@ BOOL
 }
 
 BOOL
-	Init()
+	CStackBacktrace::Init()
 {
 	BOOL bRet = FALSE;
 
@@ -173,7 +173,7 @@ BOOL
 }
 
 BOOL
-	Unload()
+	CStackBacktrace::Unload()
 {
 	BOOL bRet = FALSE;
 
@@ -197,7 +197,7 @@ BOOL
 }
 
 BOOL
-	StackBacktrace()
+	CStackBacktrace::StackBacktrace()
 {
 	BOOL			bRet						= FALSE;
 
@@ -213,7 +213,7 @@ BOOL
 
 
 	printf("[%s] begin \n", __FUNCTION__);
-	printf("[%s] 0x%08p \n", __FUNCTION__, StackBacktrace);
+	printf("[%s] 0x%08p \n", __FUNCTION__, &CStackBacktrace::StackBacktrace);
 	
 	__try
 	{

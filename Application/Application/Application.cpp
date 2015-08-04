@@ -40,10 +40,12 @@ BOOL
 VOID
 	Func3()
 {
+	CStackBacktrace StackBacktrace;
+
 	printf("[%s] 0x%08p \n", __FUNCTION__, Func3);
 
 	// WalkFrameChaim();
-	StackBacktrace();
+	StackBacktrace.StackBacktrace();
 }
 
 VOID
@@ -86,15 +88,20 @@ BOOL
 
 int _tmain(int argc, _TCHAR* argv[])
 {
+	printf("[%s][%s] \n", __DATE__, __TIME__);
+	printf("[%s] (%d) \n", __FILE__, __LINE__);
+
+	CStackBacktrace StackBacktrace;
+
 	printf("[%s] 0x%08p \n", __FUNCTION__, _tmain);
 
 	TestGetModuleName();
 
-// 	Init();
+// 	StackBacktrace.Init();
 // 
 // 	TestStackBachtrace();
 // 
-// 	Unload();
+// 	StackBacktrace.Unload();
 
 	_getch();
 
