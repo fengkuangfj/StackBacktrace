@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Application", "Application\Application.vcxproj", "{3DC0431D-347B-4CA4-BD0B-F898DF07F97A}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DynamicLibrary1", "..\DynamicLibrary1\DynamicLibrary1.vcxproj", "{3F7BEC82-AFD6-4E67-AD8C-CF2EBBC8E7D4}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DynamicLibrary2", "..\DynamicLibrary2\DynamicLibrary2.vcxproj", "{61295009-E05C-432C-8BEF-A59851358E5C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3DC0431D-347B-4CA4-BD0B-F898DF07F97A}.Debug|Win32.ActiveCfg = Debug|Win32
+		{3DC0431D-347B-4CA4-BD0B-F898DF07F97A}.Debug|Win32.Build.0 = Debug|Win32
+		{3DC0431D-347B-4CA4-BD0B-F898DF07F97A}.Release|Win32.ActiveCfg = Release|Win32
+		{3DC0431D-347B-4CA4-BD0B-F898DF07F97A}.Release|Win32.Build.0 = Release|Win32
+		{3F7BEC82-AFD6-4E67-AD8C-CF2EBBC8E7D4}.Debug|Win32.ActiveCfg = Debug|Win32
+		{3F7BEC82-AFD6-4E67-AD8C-CF2EBBC8E7D4}.Debug|Win32.Build.0 = Debug|Win32
+		{3F7BEC82-AFD6-4E67-AD8C-CF2EBBC8E7D4}.Release|Win32.ActiveCfg = Release|Win32
+		{3F7BEC82-AFD6-4E67-AD8C-CF2EBBC8E7D4}.Release|Win32.Build.0 = Release|Win32
+		{61295009-E05C-432C-8BEF-A59851358E5C}.Debug|Win32.ActiveCfg = Debug|Win32
+		{61295009-E05C-432C-8BEF-A59851358E5C}.Debug|Win32.Build.0 = Debug|Win32
+		{61295009-E05C-432C-8BEF-A59851358E5C}.Release|Win32.ActiveCfg = Release|Win32
+		{61295009-E05C-432C-8BEF-A59851358E5C}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
