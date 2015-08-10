@@ -44,7 +44,7 @@ VOID
 
 	printf("[%s] 0x%08p \n", __FUNCTION__, Func3);
 
-	// WalkFrameChaim();
+	// StackBacktrace.WalkFrameChaim();
 	StackBacktrace.StackBacktrace();
 }
 
@@ -64,26 +64,12 @@ VOID
 	Func2();
 }
 
-BOOL
+VOID
 	TestStackBachtrace()
 {
-	BOOL bRet = FALSE;
-
-
 	printf("[%s] 0x%08p \n", __FUNCTION__, TestStackBachtrace);
 
-	__try
-	{
-		Func1();
-
-		bRet = TRUE;
-	}
-	__finally
-	{
-		;
-	}
-
-	return bRet;
+	Func1();
 }
 
 int _tmain(int argc, _TCHAR* argv[])
@@ -95,13 +81,13 @@ int _tmain(int argc, _TCHAR* argv[])
 
 	printf("[%s] 0x%08p \n", __FUNCTION__, _tmain);
 
-	TestGetModuleName();
+	// TestGetModuleName();
 
-// 	StackBacktrace.Init();
-// 
-// 	TestStackBachtrace();
-// 
-// 	StackBacktrace.Unload();
+ 	StackBacktrace.Init();
+ 
+ 	TestStackBachtrace();
+ 
+ 	StackBacktrace.Unload();
 
 	_getch();
 
